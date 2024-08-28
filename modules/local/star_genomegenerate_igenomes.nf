@@ -2,7 +2,8 @@ process STAR_GENOMEGENERATE_IGENOMES {
     tag "$fasta"
     label 'process_high'
 
-    container "biocontainers/star:2.7.8a--h9ee0642_1"
+    container "950796408753.dkr.ecr.us-west-2.amazonaws.com/quay/biocontainers/star:2.7.8a--h9ee0642_1"
+    //container "biocontainers/star:2.7.8a--h9ee0642_1"
 
     input:
     path fasta
