@@ -2,8 +2,7 @@ process STAR_ALIGN {
     tag "$meta.id"
     label 'process_high'
 
-    container "950796408753.dkr.ecr.us-west-2.amazonaws.com/quay/biocontainers/star:2.7.8a--h9ee0642_1"
-    //container "biocontainers/star:2.7.8a--h9ee0642_1"
+    container "950796408753.dkr.ecr.us-west-2.amazonaws.com/awsecr111/bioinfo:star2.7.8a"
 
     input:
     tuple val(meta), path(reads, stageAs: "input*/*")
